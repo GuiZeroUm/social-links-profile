@@ -1,4 +1,5 @@
 import jessica from './assets/avatar-jessica.jpeg'
+import { Text } from './components/text'
 
 export default function App() {
   // const [count, setCount] = useState(0)
@@ -8,15 +9,19 @@ export default function App() {
 
   return (
     <>
-      <div className="bg-Dark-Grey rounded-2xl container mx-auto flex max-[1440px] min-[375px] flex-col content-center items-center">
+      <div className="bg-Dark-Grey rounded-2xl container mx-auto mt-36 p-5 flex max-[1440px] min-[375px] flex-col content-center items-center">
         <div>
-          <img src={jessica} className='rounded-full'/>
+          <img src={jessica} width={100} className='rounded-full'/>
         </div>
 
-        <div>
+        <div className='text-center mt-10 mb-10 flex flex-col gap-3 '>
           <h1 className='text-lg text-White font-[Inter] font-bold'>Jessica Randall</h1>
-          <h3 className='text-Green font-[Inter] font-semibold'>London, United Kingdom</h3>
+          <p className='text-Green text-sm font-semibold font-[Inter]'>London, United Kingdom</p>
         </div>
+        <p className='text-White'>"Fron-End developer and avid reader."</p>
+
+        <Text />
+        
       </div>
     </>
   )
